@@ -17,9 +17,9 @@
 }   
 #suggestionBoxBase iframe{
     height: 80vh;
-    width: 70vw;
+    width: 70%;
     border-radius: 10px;
-    margin: 5vh 15vw 5vh 15vw;
+    margin: 5vh 15% 5vh 15%;
     border-style: solid;
     border-color: rgb(25, 25, 25);
     border-width: 10px;
