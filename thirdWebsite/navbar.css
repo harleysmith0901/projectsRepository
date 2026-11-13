@@ -33,6 +33,14 @@
     background-color: rgb(25, 0, 100);
     border-radius: 10px;
     width: fit-content;
+    cursor: cell;
+}
+#navBase #content a:hover {
+    border-style: solid;
+    border-color: rgb(50, 50, 50);
+    border-width: 5px;
+    margin: 5px;
+    background-color: rgb(35, 0, 125);
 }
 #navBase #content .separator{
     margin: 10px;
