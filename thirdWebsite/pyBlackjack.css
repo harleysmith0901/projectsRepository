@@ -1,0 +1,24 @@
+#pyBlackjackBase{
+    width: 90%;
+    border-radius: 20px;
+    background-color: rgb(50, 50, 50);
+    margin: auto;
+    display: grid;
+    height: min-content;
+}
+#pyBlackjackBase #title{
+    color: white;
+    font-size: 5vw;
+    text-decoration: underline;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: 5vh;
+}
+#pyBlackjackBase iframe{
+    height: 50vh;
+    width: 80vw;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}

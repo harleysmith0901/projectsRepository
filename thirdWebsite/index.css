@@ -1,0 +1,17 @@
+* {
+    cursor: default;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+body {
+    background-color: rgb(50, 255, 255);
+}
+
+.marker{
+    margin-bottom: 15vh;
+}
+
+.gap15vh{
+    height: 15vh;
+}
