@@ -1,0 +1,26 @@
+#suggestionBoxBase{
+    background-color: rgb(50,50,50);
+    width: 100%;
+    padding-top: 5vh;
+    border-top-style: solid;
+    border-top-width: 1vh;
+    border-top-color: rgb(75, 75, 75);
+    display: block;
+}
+#suggestionBoxBase #title{
+    color: white;
+    font-size: 5vw;
+    text-decoration: underline;
+    font-weight: bolder;
+    margin: 5vh auto 5vh auto;
+    width: fit-content;
+}   
+#suggestionBoxBase iframe{
+    height: 80vh;
+    width: 70%;
+    border-radius: 10px;
+    margin: 5vh 15% 5vh 15%;
+    border-style: solid;
+    border-color: rgb(25, 25, 25);
+    border-width: 10px;
+}
