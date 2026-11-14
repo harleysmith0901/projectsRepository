@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Harley's HTML homepage</title></head>
+	<body>
+		<style>
+			.bottom{
+				height: 500px;
+				width: 100vw;
+			}
+			#hide{
+				text-decoration: none;
+				color: black;
+				font-style: normal;
+				cursor: text;
+			}
+			#wrap{
+				display: inline-block;
+				margin: 10px;
+			}
+            .cursorText{cursor: text;
+			font-family: 'Times New Roman', Times, serif;
+			font-size: xx-large;}
+            #hideButton{
+                border-style: none;
+                background-color: #ffffff;
+            }
+			.xx-s{
+				font-size: xx-small;
+			}
+			#patchNotes{
+				font-size: smaller;
+				text-decoration: none;
+				margin-left: 7px;
+			}
+			#patchNotesGap{
+				margin-top: 50px;
+			}
+			.questionCursor{
+				cursor: help;
+			}
+			.blueText{
+				color: blue;
+				font-size: smaller;
+				cursor: pointer;
+			}
+			.oneLineGap{
+				margin: 0px;
+				border-width: 1px;
+				border-style: none;
+				background-color: #ffffff;
+			}
+			.oneLineGap p {
+				padding-left: 100px;
+				padding-right: 100px;
+			}
+			a {
+				color: blue;
+			}
+		</style>
+		<div class="questionCursor"><a href="./dont open/patchNotes.html" id="patchNotes" class="questionCursor">Patch Notes</a></div>
+		
+		<div class="oneLineGap">
+			<button id="hideButton" commandFor="modal-suggestBoxSheet" command="show-modal" class="oneLineGap"><p> </p></button>
+			<dialog class="modal-suggestBoxSheet" id="modal-suggestBoxSheet">
+				<button commandFor="modal-suggestBoxSheet" command="close">&times;</button><br>
+				<iframe src="https://docs.google.com/spreadsheets/d/1eL6V_M7a9tQLDvqhp8CTEX3jUa7Ee0Pm_tjY3qIYw4I/edit?usp=sharing" width="1000px" height="750px"  frameborder="0"></iframe>
+			</dialog>
+		</div>
 
+		<button id="hideButton" commandFor="modal-suggestBox" command="show-modal" class="blueText">Suggestion box</button>
+		<dialog class="modal-suggestBox" id="modal-suggestBox">
+			<button commandFor="modal-suggestBox" command="close">&times;</button>
+			<br>
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScNPE2hO2zwkT81SQ7aQco7HqLIq0TyDqOAZD2KAtsdzlptlg/viewform?usp=header" width="1000px" height="750px"  frameborder="0"></iframe>
+		</dialog>
+		<br>
+		<button id="hideButton" commandFor="modal" command="show-modal"><h1 class="cursorText">This is my homepage for my HTML projects</h1></button>
+        <dialog class="modal" id="modal" class="openButton">
+            <button commandFor="modal" command="close">&times;</button>
+            <h2>Go to download .zip file page</h2>
+            <p><a href="./dont open/download.html">Click here</a></p>
+        </dialog>
+		<p class="xx-s">Most of this website is just a self-made / personal wiki for front and back end website development</p>
+		<hr>
+		<br>
+		<h3>Projects from the <em><a href="https://www.youtube.com/watch?v=UB1O30fR-EE&t=0s" target="_blank">Youtube video</a></em></h3>
+		<ul>
+			<li><a href="tutorial/testwebpage.html">Webpage</a></li>
+			<li><a href="tutorial/blog.html">Fake Blog Page</a></li>
+		</ul>
+		<br>
+		<hr>
+		<br>
+		<p><a href="python/python.html">My Python Projects</a></p>
+		<br>
+		<hr>
+		<br>
+		<p><a href="other/otherHomepage.html">My school stuff</a></p>
+		<br>
+		<hr>
+		<br>
+		<p><a href="js/js_homepage.html">JavaScript projects</a></p>
+		<br>
+		<hr>
+		<br>
+		<p><a href="css/cssHomepage.html">CSS projects</a></p>
+		<br>
+		<hr>
+		<br>
+		<div class="bottom"></div>
+	</body>
+</html>
