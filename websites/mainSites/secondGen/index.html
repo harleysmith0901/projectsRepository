@@ -1,1 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Homepage</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            cursor: default;
+            overflow: hidden;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h2 {
+            cursor: pointer;
+        }
+        body{
+            margin: 0;
+        }
+        #defaultCursor{
+            cursor: default;
+        }
+        #body{
+            margin: 0px;
+            border-width: 5px;
+            border-style: solid;
+            border-top-color: rgb(75,75,75);
+            border-left-color: rgb(75,75,75);
+            border-bottom-color: rgb(100,100,100);
+            border-right-color: rgb(100,100,100);
+            background-color: rgb(100, 100, 255);
+            height: 100vh;
+            width: 100vw;
+            background-size: contain;
+        }
+        .greenBackgroundBody{
+            background-color: lightgreen;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            margin: 30px;
+            text-align: center;
+            width: 75vw;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .greenBackground{
+            background-color: lightgreen;
+            color: white;
+            text-decoration: none;
+            margin: 30px;
+            text-align: center;
+            width: 75vw;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .separator{
+            height: 2px;
+            width: 95vw;
+            border-width: 2px;
+            border-color: rgb(87,87,87);
+            border-style: solid;
+            margin-left: 2vw;
+            margin-right: 2vw;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+        #button-main{
+            background-color: rgb(100, 100, 255);
+            border-width: 0px;
+            width:90vw;
+            margin-left: 10vw;
+            margin-right: 10vw;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            cursor: default;
+        }
+        .main-button-extra-margin{
+            margin-left: 10vw;
+            margin-right: 10vw;
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+        }
+        .modal-exit{
+            background-color: rgb(255, 100, 100);
+            color: white;
+            padding-left: 15px;
+            text-decoration: none;
+            margin: 30px;
+            text-align: center;
+            width: 75vw;
+            border-style: none;
+            margin-bottom: 0vh;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        dialog{
+            background-color: rgb(50, 50, 255);
+            width: 90vw;
+            height: 55vh;
+            border-style: solid;
+            border-width: 5px;
+            border-top-color: rgb(75,75,75);
+            border-left-color: rgb(75,75,75);
+            border-bottom-color: rgb(100,100,100);
+            border-right-color: rgb(100,100,100);
+            padding-left: 5vw;
+            padding-right: 5vw;
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        dialog button{
+            border-width: 0px;
+            border-style: none;
+            background-color: rgb(50, 50, 255);
+        }
+        .suggestion{
+            padding: 5px;
+        }
+        .frame{
+            margin-top: 5vh;
+            height: 70vh;
+            border-top-color: rgb(75,75,75);
+            border-left-color: rgb(75,75,75);
+            border-bottom-color: rgb(100,100,100);
+            border-right-color: rgb(100,100,100);
+            border-style: solid;
+            border-width: 5px;
+        }
+        #modal-suggestionBox{
+            height: 95vh;
+        }
+        #button-python{
+            border-style: none;
+            border-width: 0px;
+            background-color: rgb(100, 100, 255);
+            margin-left: 10vw;
+            margin-right: 10vw;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .bottomMargin5vh {
+            margin-bottom: 5vh;
+        }
+        .height90vh{
+            height: 90vh;
+        }
+        #modal-main{
+            height: 55vh;
+        }
+    </style>
 
+    <dialog id="modal-main">
+        <button commandFor="modal-main" command="close" class="modal-exit"><h2>Exit</h2></button>
+        <button commandFor="modal-patch" command="show-modal" class="greenBackground"><h2>Patch Notes</h2></button>
+        <button commandFor="modal-suggestionBox" command="show-modal"><div class="greenBackground" id="suggestion"><h2>Suggestion Box</h2></div></button>
+        <a href="./betterWebsite.zip"><div class="greenBackground"><h2>ZIP File Download</h2></div></a>
+    </dialog>
+
+    <dialog id="modal-suggestionBox">
+        <button commandFor="modal-suggestionBox" command="close" class="modal-exit"><h2>Exit</h2></button>
+    	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScNPE2hO2zwkT81SQ7aQco7HqLIq0TyDqOAZD2KAtsdzlptlg/viewform?usp=header" width="100%" height="25%"  frameborder="0" class="frame"></iframe>
+    </dialog>
+
+    <dialog id="modal-python">
+        <button commandFor="modal-python" command="close" class="modal-exit"><h2>Exit</h2></button>
+        <button commandFor="modal-blackjacks" command="show-modal"><div class="greenBackground"><h2>Blackjack Games</h2></div></button>
+    </dialog>
+
+    <dialog id="modal-blackjacks">
+        <button commandFor="modal-blackjacks" command="close" class="modal-exit"><h2>Exit</h2></button>
+        <button command="show-modal" commandFor="modal-oldBlackjack"><div class="greenBackground"><h2>Original Blackjack</h2></div></button>
+        <button command="show-modal" commandFor="modal-newBlackjack"><div class="greenBackground"><h2>Newer Blackjack</h2></div></button>
+    </dialog>
+
+    <dialog class="height90vh" id="modal-patch">
+        <button class="modal-exit" command="close" commandFor="modal-patch"><h2>Exit</h2></button>
+        <iframe class="frame" class="suggestion" class="bottomMargin5vh" src="./patch.html" width="100%" height="25%" frameborder="0"></iframe>
+    </dialog>
+
+    <dialog class="height90vh" id="modal-newBlackjack">
+        <button class="modal-exit" command="close" commandFor="modal-newBlackjack"><h2>Exit</h2></button>
+        <iframe class="frame" class="suggestion" class="bottomMargin5vh" src="https://www.onlineide.pro/playground/share/c7e60ae2-92ef-4ad1-a728-fd63e8d2d11f" width="100%" height="25%" frameborder="0"></iframe>        
+    </dialog>
+
+    <dialog class="height90vh" id="modal-oldBlackjack">
+        <button class="modal-exit" command="close" commandFor="modal-oldBlackjack"><h2>Exit</h2></button>
+        <iframe class="frame" class="suggestion" class="bottomMargin5vh" src="https://www.onlineide.pro/playground/share/3ebff5fd-4a25-40d4-b0b3-a00ac56917db" width="100%" height="25%" frameborder="0"></iframe>        
+    </dialog>
+
+</head>
+<body>
+    <div id="body">
+        <button command="show-modal" commandFor="modal-main" id="button-main"><h1 id="defaultCursor" class="greenBackgroundBody" class="main-button-extra-margin">Harley's HTML Homepage</h1></button>
+        <div class="separator"></div>
+        <button command="show-modal" commandFor="modal-python" id="button-python">
+            <h1 class="greenBackgroundBody" class="main-button-extra-margin">Python Projects</h1>
+        </button>
+    </div>
+</body>
+</html>

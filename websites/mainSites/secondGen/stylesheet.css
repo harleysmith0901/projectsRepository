@@ -1,0 +1,178 @@
+/*
+
+    CSS Stylesheet For Website
+
+*/
+
+/*  SO Elements  */
+
+*{
+    cursor: cell;
+}
+
+body{
+    margin: 0px;
+
+    background-color: cornflowerblue;
+
+    min-height: 99vh;
+
+    border-style: solid;
+    border-top-color: rgb(50,50,50);
+    border-left-color: rgb(50,50,50);
+    border-bottom-color: rgb(75,75,75);
+    border-right-color: rgb(75,75,75);
+    border-width: 0.6vh;
+}
+
+button{
+    border-style: none;
+    border-width: 0px;
+    border-radius: 10px;
+
+    padding: 0px;
+
+    align-self: center;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+dialog {
+    background-color: rgb(80, 115, 250);
+    
+    border-style: solid;
+    border-top-color: rgb(125,125,125);
+    border-left-color: rgb(125,125,125);
+    border-bottom-color: rgb(175,175,175);
+    border-right-color: rgb(175,175,175);
+    border-width: 0.6vh;
+    border-radius: 10px;
+
+    width: 75vw;
+    height: 75vh
+}
+
+a{
+    text-decoration: none;
+
+    color: white;
+}
+
+/*  EO Elements  */
+
+
+
+
+
+/*. SO Classes  */
+
+.standardBorder{
+    border-style: solid;
+    border-radius: 10px;
+    border-top-color: rgb(50,50,50);
+    border-left-color: rgb(50,50,50);
+    border-bottom-color: rgb(75,75,75);
+    border-right-color: rgb(75,75,75);
+    border-width: 3px;
+}
+
+.borderRadius10{
+    border-radius: 10px;
+}
+
+
+
+.padding20{
+    padding: 20px;
+}
+
+
+
+.marginWidthRatio-1-2-1{
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.marginTop50px{
+    margin-top: 50px;
+}
+
+.marginBottom50px{
+    margin-bottom: 50px;
+}
+
+.homeButton{
+    width: 50vw
+}
+
+
+
+.standardGreenBackground{
+    background-color: lightgreen;
+
+    border-style: solid;
+    border-radius: 10px;
+    border-top-color: rgb(100,100,100);
+    border-left-color: rgb(100,100,100);
+    border-bottom-color: rgb(125,125,125);
+    border-right-color: rgb(125,125,125);
+    border-width: 3px;
+}
+
+
+
+.font{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    
+}
+
+
+
+.separator{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 50px;
+
+    border-color: rgb(100,100,100);
+    border-width: 2.5px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.width50vw{
+    width: 48vw;
+}
+
+.redBackground{
+    background-color: rgb(255,100,100);
+
+    border-style: solid;
+    border-radius: 10px;
+    border-top-color: rgb(100,100,100);
+    border-left-color: rgb(100,100,100);
+    border-bottom-color: rgb(125,125,125);
+    border-right-color: rgb(125,125,125);
+    border-width: 3px;
+}
+
+.dialogMargin{
+    margin-left: 13vw;
+}
+
+/*  EO Classes. */
+
+
+
+
+
+/*  SO Identification  */
+
+#mainDialog{
+    height: 65vh;
+}
+
+/*  EO Identification  */
